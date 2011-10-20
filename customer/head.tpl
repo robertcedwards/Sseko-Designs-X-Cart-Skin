@@ -2,54 +2,38 @@
 $Id: head.tpl,v 1.189.2.22 2010/01/28 08:38:23 aim Exp $
 vim: set ts=2 sw=2 sts=2 et:
 *}
-<script type="text/javascript" src="/skin1/js/jquery-1.3.1.min.js"></script>	
-<script type="text/javascript" language="javascript" src="/skin1/js/jquery.dropdownPlain.js"></script>
-<div class="line1">
-  <div class="logo">
-    <a href="http://www.ssekodesigns.com"><img src="{$ImagesDir}/ssekowebheaderopp.png" alt="" /></a>
-    </div>
-  {include file="customer/phones.tpl"}
-  {if $main ne "fast_lane_checkout"}
-    {include file="customer/language_selector.tpl"}
-  {/if}
-</div>
-<div id="header-test">
-<div id="page-wrap">   
-  <ul class="dropdown">
-<li><a href="http://www.ssekodesigns.com">home</a>
-        		
-        	</li>
-        	<li><a href="#">the story</a>
-        		<ul class="sub_menu">
-        			<li><a href="http://www.ssekodesigns.com/ourstory/">our story</a></li>
-        			<li><a href="http://www.ssekodesigns.com/women/">the women</a></li>
-        			 <li><a href="http://www.ssekodesigns.com/whywomen/">why women</a></li>
-        			 <li><a href="http://www.ssekodesigns.com/love-liz/">love, liz</a></li>
-        		</ul>
-        	</li>
-        	<li><a href="http://shop.ssekodesigns.com">shop</a>
-        	</li>
-        	<li><a href="http://www.ssekodesigns.com/wedding/">wedding</a>
-        	</li>
-        	<li><a href="#">movement</a>
-        		<ul class="sub_menu">
-        			 <li><a href="http://www.ssekodesigns.com/contact/">contact</a></li>
-        			 <li><a href="http://www.ssekodesigns.com/get-involved/">get involved</a></li>
-        			 <li><a href="http://www.ssekodesigns.com/host-a-party/">host a party</a></li>
-        			 <li><a href="http://www.ssekodesigns.com/ambassador/">become an ambassador</a></li>
-        		</ul>
-        	</li>
-            <li><a href="http://www.ssekodesigns.com/gallery/">gallery</a>	
-        	</li>
-            <li><a href="http://www.ssekodesigns.com/join-us/">join us</a>
-        	</li>
-            <li><a href="http://www.ssekodesigns.com/faqs/">faqs</a>
-        	</li>
-            <li><a href="http://www.ssekodesigns.com/blog/">blog</a>
-        	</li>
+    <header>
+      <div id="logo" class="grid_3">
+        <a href="/">
+          <img src="/images/logo.png"/>
+        </a>
+      </div>
+      <div id="description" class="grid_5">
+        <span style="display:none;">Every Sandal has a story</span>
+        <img src="/images/description.png"/>
+      </div>
+      <div class="grid_9 nav">
+      <div id="menu" class="menu-main-container">
+        <ul id="menu-main" class="menu">
+          <li id="menu-item-8" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-8"><a href="http://shop.ssekodesigns.com/">Shop Sseko //</a></li>
+          <li id="menu-item-322" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-322"><a href="http://sseko.welovewebsit.es/style/">Style your Ssekos //</a></li>
+          <li id="menu-item-14" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-14"><a href="http://sseko.welovewebsit.es/the-sseko-story/">The Sseko Story //</a>
+            <ul class="sub-menu">
+              <li id="menu-item-422" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-422"><a href="http://sseko.welovewebsit.es/what-we-do/">What We Do ::</a></li>
+              <li id="menu-item-421" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-421"><a href="http://sseko.welovewebsit.es/meet-the-women/">meet {the women} ::</a></li>
+              <li id="menu-item-423" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-423"><a href="http://sseko.welovewebsit.es/the-sseko-story/">Our Story</a></li>
+            </ul>
+          </li>
+          <li id="menu-item-19" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-19"><a href="http://sseko.welovewebsit.es/get-involved/">Get Involved //</a></li>
+          <li id="menu-item-317" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-317"><a href="http://sseko.welovewebsit.es/news-2/">News</a></li>
         </ul>
-</div>
-<br>	
+      </div>     
+      </div>
+  
+      <div class="clear"></div> 
+    </header>
+
+	
 {if $main ne "fast_lane_checkout" && !$printable}
   <div class="line2">
     {include file="customer/search.tpl"}
@@ -68,4 +52,3 @@ vim: set ts=2 sw=2 sts=2 et:
   </div>
 {/if}
 {include file="customer/noscript.tpl"}
-</div>

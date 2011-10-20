@@ -11,19 +11,26 @@ vim: set ts=2 sw=2 sts=2 et:
   <!--[if lt IE 7]>
   <script src="{$SkinDir}/customer/iefix.js" type="text/javascript"></script>
   <![endif]-->
+  <meta name="google-site-verification" content="">
+  <meta name="author" content="Sseko Designs">
+  <meta name="Copyright" content="Copyright Sseko Designs 2011. All Rights Reserved.">
+  <meta name="DC.title" content="Sseko Designs">
+  <meta name="DC.subject" content="Every Sandal has a story">
+  <meta name="DC.creator" content="WeCreativeAgency.com">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+  <link rel="shortcut icon" href="/_/img/favicon.ico">
+  <link rel="apple-touch-icon" href="/_/img/apple-touch-icon.png">
+  <link rel="stylesheet" href="/_/js/blueberry.css">
+  <link rel="stylesheet" href="/_/js/fancybox/jquery.fancybox-1.3.4.css" type="text/css" media="screen" />
+
+  <script> var ADAPT_CONFIG = {path: '/_/js/css/',dynamic: true,range: ['0px    to 760px  = mobile.min.css','760px  to 960px  = 720.min.css','960px  to 5000px = 960.min.css',]};</script> 
 </head>
 <body{if $body_onload ne ''} onload="javascript: {$body_onload}"{/if} class="{if $main ne "catalog" || $current_category.category ne ""}normal-page{else}welcome-page{/if}{foreach from=$container_classes item=c} {$c}{/foreach}">
-<div id="page-container">
-  <div id="page-container2">
-    <div id="content-container">
-      <div id="content-container2">
-        <br>
-       <br>
-       
-        <br>
-        <br>
-        <div id="center">
-          <div id="center-main">
+  <div class="container_12 wrapper ">
+  {include file="customer/head.tpl"}
+
+        <div id="center" class="grid_8">
+          
             {include file="customer/evaluation.tpl"}
 <!-- central space -->
             {if $gcheckout_enabled && $main ne "cart" && $main ne "checkout" && $main ne "anonymous_checkout" && $main ne "order_message"}
@@ -37,11 +44,10 @@ vim: set ts=2 sw=2 sts=2 et:
               {include file="modules/Special_Offers/customer/new_offers_message.tpl"}
             {/if}
             {include file="customer/home_main.tpl"}
-<!-- /central space -->
-          </div>
+          
         </div>
         {if $main ne "catalog" || $current_category.category ne ""}
-        <div id="left-bar">
+        <div id="left-bar" class="col_3">
           {if $categories && ($active_modules.Flyout_Menus || $config.General.root_categories eq "Y" || $subcategories)}
             {include file="customer/categories.tpl" }
           {/if}
@@ -72,9 +78,7 @@ vim: set ts=2 sw=2 sts=2 et:
       </div>
     </div>
     <div class="clearing">&nbsp;</div>
-    <div id="header">
-      {include file="customer/head.tpl"}
-    </div>
+  
     <div id="footer">
       {if $active_modules.Users_online}
         {include file="modules/Users_online/menu_users_online.tpl"}
