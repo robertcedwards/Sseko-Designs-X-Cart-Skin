@@ -1,0 +1,190 @@
+/*
+$Id: main.css,v 1.5 2008/10/14 08:27:00 max Exp $
+vim: set ts=2 sw=2 sts=2 et:
+*/
+.flc-buttons .flc-1-button {
+  float: right;
+}
+.flc-buttons .flc-3-button,
+  .flc-buttons .flc-2-button
+{
+  margin-left: 20px;
+  float: right;
+}
+
+/*
+  big main button
+*/
+div.flc-2-button {
+  background: transparent url(../../images/but_flc_main_right.png) no-repeat right top;
+}
+div.flc-2-button div,
+  div.flc-2-button a:link,
+  div.flc-2-button a:visited,
+  div.flc-2-button a:hover,
+  div.flc-2-button a:active
+{
+  background: transparent url(../../images/but_flc_main_left.png) no-repeat;
+  line-height: 29px;
+  color: #510000;
+  font-weight: bold;
+  font-size: 11px;
+}
+
+/*
+  big button
+*/
+div.flc-1-button {
+  background: transparent url(../../images/but_flc_right.png) no-repeat right top;
+}
+div.flc-1-button div,
+  div.flc-1-button a:link,
+  div.flc-1-button a:visited,
+  div.flc-1-button a:hover,
+  div.flc-1-button a:active
+{
+  background: transparent url(../../images/but_flc_left.png) no-repeat;
+  line-height: 29px;
+  color: #111d4d;
+  font-weight: bold;
+  font-size: 11px;
+}
+
+/*
+  big main with arrow button
+*/
+div.flc-3-button {
+  background: transparent url(../../images/but_flc_arrow_right.png) no-repeat right top;
+  padding-right: 30px;
+}
+div.flc-3-button div,
+  div.flc-3-button a:link,
+  div.flc-3-button a:visited,
+  div.flc-3-button a:hover,
+  div.flc-3-button a:active
+{
+  background: transparent url(../../images/but_flc_main_left.png) no-repeat;
+  line-height: 29px;
+  color: #510000;
+  font-weight: bold;
+  font-size: 11px;
+}
+
+
+/*
+  cart page
+*/
+.shipping-method a:link {
+  font-weight: bold;
+  font-size: 11px;
+  text-decoration: underline;
+}
+.shipping-method a:visited {
+  font-weight: bold;
+  font-size: 11px;
+  text-decoration: underline;
+}
+.shipping-method a:hover {
+  font-weight: bold;
+  font-size: 11px;
+  text-decoration: none;
+}
+.shipping-method a:active {
+  font-weight: bold;
+  font-size: 11px;
+  text-decoration: underline;
+}
+.shipping-method label {
+  display: block;
+  vertical-align: middle;
+}
+.shipping-warning {
+  color: #3c6992;
+  text-decoration: none;
+  font-size: 9px;
+  font-family: arial, verdana, helvetica, sans-serif;
+}
+
+
+A.CheckoutTab:link {
+	COLOR: #112536;
+	FONT-WEIGHT: bold;
+	FONT-SIZE: 11px;
+	TEXT-DECORATION: underline;
+}
+A.CheckoutTab:visited {
+	COLOR: #112536;
+	FONT-WEIGHT: bold;
+	FONT-SIZE: 11px;
+	TEXT-DECORATION: underline;
+}
+A.CheckoutTab:hover {
+	COLOR: #112536;
+	FONT-WEIGHT: bold;
+	FONT-SIZE: 11px;
+	TEXT-DECORATION: none;
+}
+A.CheckoutTab:active {
+	COLOR: #112536;
+	FONT-WEIGHT: bold;
+	FONT-SIZE: 11px;
+	TEXT-DECORATION: underline;
+}
+.CheckoutTabSel {
+	COLOR: #112536;
+	FONT-WEIGHT: bold;
+	FONT-SIZE: 11px;
+}
+.LineAfterCart {
+	BACKGROUND-COLOR: #a6b1c1;
+}
+.LineBeforeCart {
+	BACKGROUND-COLOR: #ff8600;
+}
+.BigButtonTitle {
+	COLOR: #112536;
+	FONT-WEIGHT: bold;
+	FONT-SIZE: 11px;
+}
+A.ShippingMethod:link {
+	COLOR: #112536;
+	FONT-WEIGHT: bold;
+	FONT-SIZE: 11px;
+	TEXT-DECORATION: underline;
+}
+A.ShippingMethod:visited {
+	COLOR: #112536;
+	FONT-WEIGHT: bold;
+	FONT-SIZE: 11px;
+	TEXT-DECORATION: underline;
+}
+A.ShippingMethod:hover {
+	COLOR: #112536;
+	FONT-WEIGHT: bold;
+	FONT-SIZE: 11px;
+	TEXT-DECORATION: none;
+}
+A.ShippingMethod:active {
+	COLOR: #112536;
+	FONT-WEIGHT: bold;
+	FONT-SIZE: 11px;
+	TEXT-DECORATION: underline;
+}
+.BBSide {
+	WIDTH: 8px;
+	HEIGHT: 29px;
+}
+.FLC_Register {
+    COLOR: #550000;
+    FONT-SIZE: 12px;
+    FONT-WEIGHT: bold;
+}
+.RedArrow IMG{
+	width: 18px;
+	height: 29px;
+}
+.RedArrow{
+	BACKGROUND: url(../../images/flc_but_rbg.gif);
+	background-repeat: repeat-x;
+	BACKGROUND-COLOR: #ffb534;
+}

@@ -1,0 +1,84 @@
+/*
+$Id: main.IE7.css,v 1.28 2009/09/06 16:05:23 igoryan Exp $
+vim: set ts=2 sw=2 sts=2 et:
+*/
+
+img {
+  -ms-interpolation-mode: bicubic;
+}
+/* button styles */
+button {
+  width: auto;
+  overflow: visible;
+}
+div.menu-button {
+  margin-top: 1px;
+}
+button.simple-button img {
+  margin-bottom: 2px;
+}
+a.simple-button:link,
+  a.simple-button:visited,
+  a.simple-button:hover,
+  a.simple-button:active
+{
+  vertical-align: middle;
+}
+a.simple-button img,
+  a.simple-button:link img,
+  a.simple-button:visited img,
+  a.simple-button:hover img,
+  a.simple-button:active img
+{
+  vertical-align: middle;
+  margin-bottom: 2px;
+}
+input.image-button {
+  height: 24px;
+}
+#header .languages select {
+  vertical-align: middle;
+}
+.products .details a.product-title:link,
+  .products .details a.product-title:visited,
+  .products .details a.product-title:hover,
+  .products .details a.product-title:active
+{
+  display: block; 
+  position: relative;
+}
+
+.images-viewer-icons img {
+  margin: 0px 1px;
+}
+
+/* right-to-left text direction*/
+.rtl #content-container2 {
+  right: 0%;
+  left: 100%;
+}
+
+.images-preview-bg {
+  filter: progid:DXImageTransform.Microsoft.Alpha(opacity = 50);
+}
+
+.ajax-minicart .title-bar img.minicart-button {
+  margin-top: 3px;
+  margin-bottom: 3px;
+}
+.minicart-box {
+  top: 21px;
+}
+.minicart-box .checkout-popup-link div.buttons-box {
+  top: 21px;
+}
+.buttons-row
+{
+  height: 43px !important;
+}
+div.details {
+  zoom: 1;
+}
+div.halign-center {
+  margin: 0 50% !important;
+}

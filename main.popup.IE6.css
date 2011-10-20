@@ -1,0 +1,36 @@
+/*
+$Id: main.popup.IE6.css,v 1.1 2008/09/17 13:01:49 max Exp $
+vim: set ts=2 sw=2 sts=2 et:
+*/
+
+#page-container {
+  height: 100%;
+  border: 0px none;
+  float: none;
+  position: static;
+}
+#page-container2 {
+  float: none;
+  margin: 0px;
+  position: static;
+  height: 100%;
+}
+#content-container {
+  clear: none;
+  float: none;
+}
+#content-container2 {
+  float: none;
+  position: static;
+  right: 0px;
+  width: 100%;
+}
+#center {
+  float: none;
+  position: static;
+  width: 100%;
+  left: 0px;
+}
+
+
+

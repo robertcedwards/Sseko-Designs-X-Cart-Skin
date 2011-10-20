@@ -1,0 +1,7 @@
+/*
+$Id: main.Opera.css,v 1.3 2009/09/06 16:05:23 igoryan Exp $
+vim: set ts=2 sw=2 sts=2 et:
+*/
+#content-container, #center-main {
+  overflow: visible;
+}

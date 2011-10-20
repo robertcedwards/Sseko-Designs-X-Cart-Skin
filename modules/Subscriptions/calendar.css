@@ -1,0 +1,45 @@
+/*
+$Id: calendar.css,v 1.3 2008/09/25 08:06:34 joy Exp $
+vim: set ts=2 sw=2 sts=2 et:
+*/
+
+.calendar_currentdateOff {
+	background-color: #ffffff;
+	font: bold 10px Verdana;
+}
+.calendar_currentdateOn {
+	background-color: #c5d0e1;
+	font: bold 10px Verdana;
+}
+.calendar_dateOff {
+	background-color: #ffffff;
+	font: 10px Verdana;
+}
+.calendar_dateOn {
+	background-color: #c5d0e1;
+	font: 10px Verdana;
+}
+
+.calendar_currentdateOff:hover {
+  background-color: #e6ebf3;
+}
+.calendar_currentdateOn:hover {
+  background-color: #e6ebf3;
+}
+.calendar_dateOff:hover {
+  background-color: #e6ebf3;
+}
+.calendar_dateOn:hover {
+  background-color: #e6ebf3;
+}
+
+.titleMonth {
+	background-color: #c5d0e1;
+	color:#2c3e49;
+  text-align : center;
+	font: bold 10px Verdana;
+}
+.weekDayLabel {
+	background-color: #eeeeee;
+	font: 10px Verdana;
+}

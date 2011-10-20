@@ -1,0 +1,44 @@
+/*
+$Id: main.IE6.css,v 1.2 2009/03/30 12:29:20 max Exp $
+vim: set ts=2 sw=2 sts=2 et:
+*/
+.fancycat-icons-e li ul {
+  left: 121px;
+}
+.fancycat-icons-e li ul.fancycat-icons-level-1 li ul {
+  left: 120px;
+}
+.fancycat-icons-e li ul {
+  border: 0px none;
+  background: #b1c6d7 none;
+  padding: 1px;
+}
+
+.fancycat-icons-e ul li {
+  background: white none;
+  padding-right: 6px;
+  padding-left: 5px;
+}
+
+.fancycat-icons-e ul li a:link,
+  .fancycat-icons-e ul li a:visited,
+  .fancycat-icons-e ul li a:hover,
+  .fancycat-icons-e ul li a:active
+{
+  width: 126px;
+}
+
+/*
+  Tree-like expanding
+*/
+.fancycat-page-subskin-c .menu-fancy-categories-list .content {
+  overflow: hidden;
+}
+.fancycat-icons-c li a.arrow:link,
+  .fancycat-icons-c li a.arrow:visited,
+  .fancycat-icons-c li a.arrow:hover,
+  .fancycat-icons-c li a.arrow:active
+{
+  left: -19px;
+}
+
