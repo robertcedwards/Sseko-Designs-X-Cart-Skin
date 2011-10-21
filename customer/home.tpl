@@ -18,18 +18,32 @@ vim: set ts=2 sw=2 sts=2 et:
   <meta name="DC.subject" content="Every Sandal has a story">
   <meta name="DC.creator" content="WeCreativeAgency.com">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
-  <link rel="shortcut icon" href="/_/img/favicon.ico">
-  <link rel="apple-touch-icon" href="/_/img/apple-touch-icon.png">
-  <link rel="stylesheet" href="/_/js/blueberry.css">
-  <link rel="stylesheet" href="/_/js/fancybox/jquery.fancybox-1.3.4.css" type="text/css" media="screen" />
+  <link rel="shortcut icon" href="{$SkinDir}/_/img/favicon.ico">
+  <link rel="apple-touch-icon" href="{$SkinDir}/_/img/apple-touch-icon.png">
+  <link rel="stylesheet" href="{$SkinDir}/_/js/blueberry.css">
+  <link rel="stylesheet" href="{$SkinDir}/_/js/fancybox/jquery.fancybox-1.3.4.css" type="text/css" media="screen" />
+<link rel="stylesheet" href="{$SkinDir}/style.css" type="text/css" media="screen" />
 
-  <script> var ADAPT_CONFIG = {path: '/_/js/css/',dynamic: true,range: ['0px    to 760px  = mobile.min.css','760px  to 960px  = 720.min.css','960px  to 5000px = 960.min.css',]};</script> 
+{literal}<script> 
+// Edit to suit your needs.
+var ADAPT_CONFIG = {
+  path: '/new/skin1/_/js/css/',
+  dynamic: true,
+  range: [
+    '0px    to 760px  = mobile.min.css',
+    '760px  to 960px  = 720.min.css',
+    '960px  to 5000px = 960.min.css',
+  ]
+};
+</script> 
+{/literal}
+<script src="{$SkinDir}/_/js/adapt.min.js"></script>
+
 </head>
 <body{if $body_onload ne ''} onload="javascript: {$body_onload}"{/if} class="{if $main ne "catalog" || $current_category.category ne ""}normal-page{else}welcome-page{/if}{foreach from=$container_classes item=c} {$c}{/foreach}">
   <div class="container_12 wrapper ">
   {include file="customer/head.tpl"}
-
-        <div id="center" class="grid_8">
+  <div id="center" class="grid_12">
           
             {include file="customer/evaluation.tpl"}
 <!-- central space -->
@@ -47,7 +61,7 @@ vim: set ts=2 sw=2 sts=2 et:
           
         </div>
         {if $main ne "catalog" || $current_category.category ne ""}
-        <div id="left-bar" class="col_3">
+        <div id="left-bar" class="grid_3">
           {if $categories && ($active_modules.Flyout_Menus || $config.General.root_categories eq "Y" || $subcategories)}
             {include file="customer/categories.tpl" }
           {/if}
@@ -91,6 +105,34 @@ vim: set ts=2 sw=2 sts=2 et:
     {if $active_modules.Google_Analytics && $config.Google_Analytics.ganalytics_code}
       {include file="modules/Google_Analytics/ga_code.tpl"}
     {/if}
+
+<script src="{$SkinDir}/_/js/modernizr-1.7.min.js"></script>
+<script src="{$SkinDir}/_/js/jquery.blueberry.js"></script>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+<script type="text/javascript" src="{$SkinDir}/_/js/fancybox/jquery.fancybox-1.3.4.pack.js"></script>
+{literal}
+<script>$(window).load(function() {$('.blueberry').blueberry();});</script>
+<script type="text/javascript">$(document).ready(function() {$("a.inlineimg").fancybox({'hideOnContentClick': true});});</script>
+<script type="text/javascript">
+    $(document).ready(function(){
+        var timer;
+        $('#menu li').hover(
+            function() {
+                if(timer){
+                    clearTimeout(timer);
+                    timer = null;
+                }
+                $(this).children('.sub-menu').fadeIn();
+            },
+            function() {
+                timer = setTimeout(function(){
+                    $('.sub-menu').fadeOut();
+                    }, 1000);
+                }
+           );
+        });
+</script>
+{/literal}
   </div>
 </div>
 </body>

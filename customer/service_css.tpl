@@ -2,13 +2,7 @@
 $Id: service_css.tpl,v 1.162.2.22 2010/01/28 08:38:23 aim Exp $
 vim: set ts=2 sw=2 sts=2 et:
 *}
-  <link rel="stylesheet" type="text/css" href="{$SkinDir}/{#CSSFilePrefix#}.css" />
-  <!--[if lt IE 7]>
-  <link rel="stylesheet" type="text/css" href="{$SkinDir}/{#CSSFilePrefix#}.IE6.css" />
-  <![endif]-->
-  <!--[if IE 7]>
-  <link rel="stylesheet" type="text/css" href="{$SkinDir}/{#CSSFilePrefix#}.IE7.css" />
-  <![endif]-->
+
 <script type="text/javascript">
 <!--
 if (/mozilla/.test(navigator.userAgent.toLowerCase()) && !/(compatible|webkit)/.test(navigator.userAgent.toLowerCase()))
@@ -41,15 +35,6 @@ if (/mozilla/.test(navigator.userAgent.toLowerCase()) && !/(compatible|webkit)/.
     {/if}
   {/foreach}
 {/foreach}
-
-  <link rel="stylesheet" type="text/css" href="{$SkinDir}/altskin.css" />
-  <!--[if lt IE 7]>
-  <link rel="stylesheet" type="text/css" href="{$SkinDir}/altskin.IE6.css" />
-  <![endif]-->
-  <!--[if IE 7]>
-  <link rel="stylesheet" type="text/css" href="{$SkinDir}/altskin.IE7.css" />
-  <![endif]-->
-
 {if $custom_styles}
 <style type="text/css">
 <!--

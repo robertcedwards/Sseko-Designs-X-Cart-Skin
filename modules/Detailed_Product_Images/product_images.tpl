@@ -7,7 +7,7 @@ vim: set ts=2 sw=2 sts=2 et:
   {capture name=dialog}
 
     {foreach from=$images item=i name=images}
-      <img src="{if $i.image_url}{$i.image_url|amp}{else}{$xcart_web_dir}/image.php?id={$i.imageid}&amp;type=D{/if}" alt="{$i.alt|escape}"{if $smarty.foreach.images.last} class="last"{/if} />
+      <img class="grid_4" src="{if $i.image_url}{$i.image_url|amp}{else}{$xcart_web_dir}/image.php?id={$i.imageid}&amp;type=D{/if}" alt="{$i.alt|escape}"{if $smarty.foreach.images.last} class="last"{/if} />
     {/foreach}
 
   {/capture}
