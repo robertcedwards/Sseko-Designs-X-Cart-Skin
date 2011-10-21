@@ -7,6 +7,8 @@ vim: set ts=2 sw=2 sts=2 et:
 {config_load file="$skin_config"}
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+
   {include file="customer/service_head.tpl"}
   <!--[if lt IE 7]>
   <script src="{$SkinDir}/customer/iefix.js" type="text/javascript"></script>
@@ -20,10 +22,10 @@ vim: set ts=2 sw=2 sts=2 et:
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
   <link rel="shortcut icon" href="{$SkinDir}/_/img/favicon.ico">
   <link rel="apple-touch-icon" href="{$SkinDir}/_/img/apple-touch-icon.png">
-  <link rel="stylesheet" href="{$SkinDir}/_/js/blueberry.css">
+  <link rel="stylesheet" href="{$SkinDir}/_/js/unoslider.css">
   <link rel="stylesheet" href="{$SkinDir}/_/js/fancybox/jquery.fancybox-1.3.4.css" type="text/css" media="screen" />
 <link rel="stylesheet" href="{$SkinDir}/style.css" type="text/css" media="screen" />
-
+<link rel="stylesheet" href="{$SkinDir}/_/js/themes/text/theme.css" type="text/css" media="screen" />
 {literal}<script> 
 // Edit to suit your needs.
 var ADAPT_CONFIG = {
@@ -36,6 +38,7 @@ var ADAPT_CONFIG = {
   ]
 };
 </script> 
+
 {/literal}
 <script src="{$SkinDir}/_/js/adapt.min.js"></script>
 
@@ -105,14 +108,12 @@ var ADAPT_CONFIG = {
     {if $active_modules.Google_Analytics && $config.Google_Analytics.ganalytics_code}
       {include file="modules/Google_Analytics/ga_code.tpl"}
     {/if}
-
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.min.js"></script>
 <script src="{$SkinDir}/_/js/modernizr-1.7.min.js"></script>
-<script src="{$SkinDir}/_/js/jquery.blueberry.js"></script>
-<script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+<script src="{$SkinDir}/_/js/unoslider.js"></script>
+
 <script type="text/javascript" src="{$SkinDir}/_/js/fancybox/jquery.fancybox-1.3.4.pack.js"></script>
 {literal}
-<script>$(window).load(function() {$('.blueberry').blueberry();});</script>
-<script type="text/javascript">$(document).ready(function() {$("a.inlineimg").fancybox({'hideOnContentClick': true});});</script>
 <script type="text/javascript">
     $(document).ready(function(){
         var timer;
@@ -130,8 +131,12 @@ var ADAPT_CONFIG = {
                     }, 1000);
                 }
            );
-        });
+       $("a.inlineimg").fancybox({'hideOnContentClick': true}); 
+       $('#main-slider').unoslider({width: 700,
+          height: 254}); 
+      });
 </script>
+
 {/literal}
   </div>
 </div>

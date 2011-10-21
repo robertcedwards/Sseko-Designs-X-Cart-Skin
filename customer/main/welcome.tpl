@@ -25,4 +25,15 @@ vim: set ts=2 sw=2 sts=2 et:
     </div>
 
 </div>
+    <div  class="grid_12">
+              <ul id="main-slider" class="unoslider">
+                <li><div><img src="http://dl.dropbox.com/u/980/Screenshots/16.png"/>
+                </div></li>
+                <li></li>
+              </ul>             
+            </div>
+
+
+
+
 <div class="welcome-top grid_8"><img src="{$ImagesDir}/fashion_mosaic/welcome.jpg" class="welcome" alt="" /></div>
